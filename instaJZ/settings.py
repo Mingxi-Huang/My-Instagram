@@ -120,3 +120,9 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
+
+# define by developer
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+LOGIN_REDIRECT_URL = 'posts'
+LOGOUT_REDIRECT_URL = 'posts'
+AUTH_USER_MODEL = 'Insta.InstaUser'  # need to update admin, signup
